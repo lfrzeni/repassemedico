@@ -1,56 +1,60 @@
 
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Users, Clock, Heart } from 'lucide-react';
 
 const About = () => {
-  const features = [
-    {
-      title: "Design Moderno",
-      description: "Utilizamos as mais recentes tecnologias para criar interfaces modernas e atraentes."
-    },
-    {
-      title: "Totalmente Responsivo",
-      description: "Nosso site se adapta perfeitamente a qualquer dispositivo, seja desktop, tablet ou celular."
-    },
-    {
-      title: "Fácil de Navegar",
-      description: "Interface intuitiva que torna a navegação simples e agradável para todos os usuários."
-    }
-  ];
-
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
-            Sobre <span className="text-blue-600">Nós</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
+            Sobre a <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
           </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#1e6df6] to-[#07f73f] mx-auto mb-12"></div>
           
-          <div className="mb-16">
-            <p className="text-lg text-gray-700 mb-6">
-              Somos uma equipe apaixonada por criar experiências digitais incríveis. 
-              Nossa missão é transformar ideias em realidade através de designs 
-              modernos e funcionais que atendam às necessidades dos nossos clientes.
+          <div className="mb-12">
+            <p className="text-lg text-gray-700 mb-6 text-center">
+              A MedBill é uma empresa especializada em soluções de gestão e tecnologia para instituições de saúde. 
+              Nascemos da necessidade de otimizar os processos financeiros entre clínicas, hospitais e profissionais médicos.
             </p>
-            <p className="text-lg text-gray-700">
-              Com anos de experiência no mercado, nosso objetivo é sempre superar 
-              expectativas e entregar resultados que fazem a diferença.
+            <p className="text-lg text-gray-700 text-center">
+              Nossa missão é trazer transparência, precisão e eficiência aos processos de repasse médico, 
+              permitindo que nossos clientes foquem no que realmente importa: o cuidado com a saúde.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="shadow-md hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <CheckCircle2 className="text-blue-600 mr-2" />
-                    <h3 className="text-xl font-semibold text-gray-800">{feature.title}</h3>
-                  </div>
-                  <p className="text-gray-600">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-4 gap-6 mt-16">
+            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-blue-50 p-3 rounded-full inline-flex justify-center mb-4">
+                <ShieldCheck className="text-[#1e6df6] h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Confiança</h3>
+              <p className="text-gray-600">Segurança e precisão em todos os cálculos financeiros</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-blue-50 p-3 rounded-full inline-flex justify-center mb-4">
+                <Users className="text-[#1e6df6] h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Experiência</h3>
+              <p className="text-gray-600">Anos de atuação no mercado de saúde</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-blue-50 p-3 rounded-full inline-flex justify-center mb-4">
+                <Clock className="text-[#1e6df6] h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Agilidade</h3>
+              <p className="text-gray-600">Processos otimizados para economizar seu tempo</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-blue-50 p-3 rounded-full inline-flex justify-center mb-4">
+                <Heart className="text-[#1e6df6] h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Compromisso</h3>
+              <p className="text-gray-600">Dedicação total ao sucesso dos clientes</p>
+            </div>
           </div>
         </div>
       </div>

@@ -14,18 +14,21 @@ const Navbar = () => {
     <nav className="bg-white py-4 shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-blue-600">Meu Site</div>
+          <div className="text-2xl font-bold bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</div>
           
           {/* Menu de navegação para desktop */}
           <div className="hidden md:flex space-x-8">
-            <a href="#inicio" className="text-gray-600 hover:text-blue-600 transition-colors">Início</a>
-            <a href="#sobre" className="text-gray-600 hover:text-blue-600 transition-colors">Sobre</a>
-            <a href="#contato" className="text-gray-600 hover:text-blue-600 transition-colors">Contato</a>
+            <a href="#inicio" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Início</a>
+            <a href="#sobre" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Sobre</a>
+            <a href="#servicos" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Serviços</a>
+            <a href="#vantagens" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Vantagens</a>
+            <a href="#depoimentos" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Depoimentos</a>
+            <a href="#contato" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Contato</a>
           </div>
           
           {/* Botão de menu para dispositivos móveis */}
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-gray-600 hover:text-blue-600">
+            <button onClick={toggleMenu} className="text-gray-600 hover:text-[#1e6df6]">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -37,9 +40,12 @@ const Navbar = () => {
           isOpen ? "opacity-100 top-16" : "opacity-0 top-[-400px] pointer-events-none"
         )}>
           <div className="flex flex-col space-y-4 py-4">
-            <a href="#inicio" className="text-gray-600 hover:text-blue-600 transition-colors" onClick={toggleMenu}>Início</a>
-            <a href="#sobre" className="text-gray-600 hover:text-blue-600 transition-colors" onClick={toggleMenu}>Sobre</a>
-            <a href="#contato" className="text-gray-600 hover:text-blue-600 transition-colors" onClick={toggleMenu}>Contato</a>
+            <a href="#inicio" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Início</a>
+            <a href="#sobre" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Sobre</a>
+            <a href="#servicos" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Serviços</a>
+            <a href="#vantagens" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Vantagens</a>
+            <a href="#depoimentos" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Depoimentos</a>
+            <a href="#contato" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Contato</a>
           </div>
         </div>
       </div>
