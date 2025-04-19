@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, FileImage } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -19,9 +18,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-              Gestão de <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">Repasse Médico</span> Centralizado
-            </h1>
+            <div className="flex items-center justify-center md:justify-start mb-6">
+              <FileImage className="mr-3 text-[#1e6df6]" size={36} />
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+                Gestão de <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">Repasse Médico</span> Centralizado
+              </h1>
+            </div>
             <p className="text-xl md:text-2xl text-gray-700 mb-8">
               Automatize os cálculos, ganhe transparência e reduza custos com o sistema mais completo do mercado.
             </p>
