@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { BookMedical, Settings, FileText, DatabaseBackup } from 'lucide-react';
+import { BookOpen, Settings, FileText, DatabaseBackup } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -120,7 +120,7 @@ const Services = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] p-3 rounded-lg mr-4">
-                    <BookMedical className="text-white h-8 w-8" />
+                    <BookOpen className="text-white h-8 w-8" />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-800">Compliance e Auditoria</h3>
                 </div>
