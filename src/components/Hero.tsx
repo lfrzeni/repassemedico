@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-              Gestão e <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">Repasse Médico</span> Simplificados
+              Gestão de <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">Repasse Médico</span> Centralizado
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8">
               Automatize os cálculos, ganhe transparência e reduza custos com o sistema mais completo do mercado.
