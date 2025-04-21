@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
@@ -14,11 +15,6 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center text-2xl font-bold">
-            <img 
-              src="/logo.png" 
-              alt="Logo MedBill"
-              className="mr-2 h-8 w-8 object-contain"
-            />
             <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
           </div>
           
