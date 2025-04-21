@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, FileImage } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -20,11 +20,7 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left fade-in">
             <div className="flex items-center justify-center md:justify-start mb-6">
-              <img 
-                src="/lovable-uploads/11337a8a-2f37-4152-94cc-ebc67e0660a1.png"
-                alt="Logo MedBill"
-                className="mr-3 h-9 w-9 object-contain"
-              />
+              <FileImage className="mr-3 text-[#1e6df6]" size={36} />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
                 Gestão de <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">Repasse Médico</span> Centralizado
               </h1>
@@ -68,4 +64,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
