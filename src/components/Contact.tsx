@@ -126,18 +126,11 @@ const Contact = () => {
                 <div className="flex items-start">
                   <Phone className="text-[#1e6df6] mr-3 mt-1" />
                   <div>
-                    <p className="font-medium text-gray-800">Telefone</p>
-                    <p className="text-gray-600">(11) 4002-8922</p>
+                    <p className="font-medium text-gray-800">Tel/Whats</p>
+                    <p className="text-gray-600">(18) 99722-5898</p>
                   </div>
                 </div>
-                
-                <div className="flex items-start">
-                  <MapPin className="text-[#1e6df6] mr-3 mt-1" />
-                  <div>
-                    <p className="font-medium text-gray-800">Endereço</p>
-                    <p className="text-gray-600">Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
-                  </div>
-                </div>
+                                
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">

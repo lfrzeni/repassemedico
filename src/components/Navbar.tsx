@@ -15,11 +15,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center text-2xl font-bold">
+<<<<<<< HEAD
+
             <img 
               src="/lovable-uploads/7ecf3d3e-10c7-4842-8b5a-f678a0265885.png"
               alt="Logo MedBill"
               className="mr-2 h-8 w-8 object-contain"
             />
+>>>>>>> 54bc9ef2a236c419c1ed9c8195a66f12c8d553da
             <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
           </div>
           
