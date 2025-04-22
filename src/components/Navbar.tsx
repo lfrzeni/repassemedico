@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center text-2xl font-bold">
             <img 
-              src="/lovable-uploads/11337a8a-2f37-4152-94cc-ebc67e0660a1.png"
+              src="/lovable-uploads/7ecf3d3e-10c7-4842-8b5a-f678a0265885.png"
               alt="Logo MedBill"
               className="mr-2 h-8 w-8 object-contain"
             />
