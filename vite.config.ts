@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/NOME-DO-REPO/',
+  base: '/repassemedico/',
   build: {
     rollupOptions: {
       input: {
