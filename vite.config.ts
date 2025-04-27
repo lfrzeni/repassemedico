@@ -9,11 +9,14 @@ import { componentTagger } from "lovable-tagger";
    build: {
      rollupOptions: {
        input: {
-         main: 'index.html'
-       }
-     }
-   }
- });
+         main: 'index.html',
+       },
+     },
+   },
+   server: {
+    host: "::",
+    port: 8080, 
+ };
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -23,4 +26,4 @@ import { componentTagger } from "lovable-tagger";
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+});
