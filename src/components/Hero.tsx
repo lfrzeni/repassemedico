@@ -37,7 +37,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center justify-center md:justify-start">
                 <CheckCircle2 className="text-[#1e6df6] mr-2" />
-                <span className="text-gray-700">Transparência para médicos e clínicas</span>
+                <span className="text-gray-700">Transparência para médicos e prestadores</span>
               </div>
             </div>
             <Button 
