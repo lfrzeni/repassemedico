@@ -14,10 +14,10 @@ export default defineConfig({
      },
    },
    server: {
-    host: "::",
-    port: 8080, 
-    },
-  });
+     host: "::",
+     port: 8080, 
+   },
+
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -26,5 +26,6 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  };
+  }
+});
 
