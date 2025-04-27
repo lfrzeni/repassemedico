@@ -8,17 +8,17 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
-            Sobre a <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
+            Sobre o <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#1e6df6] to-[#07f73f] mx-auto mb-12"></div>
           
           <div className="mb-12">
             <p className="text-lg text-gray-700 mb-6 text-center">
-              A MedBill é uma empresa especializada em soluções de gestão e tecnologia para instituições de saúde. 
-              Nascemos da necessidade de otimizar os processos financeiros entre clínicas, hospitais e profissionais médicos.
+              O sistema MedBill é uma plataforma que transforma a gestão de repasse médicos, trazendo clareza financeira, 
+              respeito ao corpo clinico e inteligencia estratégica para hospitais, operadoras e clinicas em geral.
             </p>
             <p className="text-lg text-gray-700 text-center">
-              Nossa missão é trazer transparência, precisão e eficiência aos processos de repasse médico, 
+              Mais do que automatizar processos, nossa missão é entregar confiança, transparência, precisão, e poder de descisão, 
               permitindo que nossos clientes foquem no que realmente importa: o cuidado com a saúde.
             </p>
           </div>
