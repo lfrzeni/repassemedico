@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-  export default defineConfig({
+export default defineConfig({
    base: '/repassemedico/',
    build: {
      rollupOptions: {
@@ -16,7 +16,8 @@ import { componentTagger } from "lovable-tagger";
    server: {
     host: "::",
     port: 8080, 
- };
+    }
+  });
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -25,5 +26,5 @@ import { componentTagger } from "lovable-tagger";
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-});
+  };
+
