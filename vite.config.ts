@@ -4,21 +4,19 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   base: '/repassemedico/',
   build: {
     rollupOptions: {
       input: {
-        main: 'index.html'
-      }
-    }
-  }
-});
-/* export default defineConfig(({ mode }) => ({
+        main: 'index.html',
+      },
+    },
+  },
   server: {
     host: "::",
     port: 8080,
-  }, */
+  },
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
