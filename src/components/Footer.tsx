@@ -58,10 +58,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Soluções</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Sistema de Repasse Médico</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Consultoria em Gestão</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Plataforma de Repasse Médico</a></li>
               <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Portal do Médico</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Dashboard Financeiro</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Dashboards Financeiros</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Consultoria em Gestão</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Contabilidade Médica</a></li>
             </ul>
           </div>
           
