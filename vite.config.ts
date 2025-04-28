@@ -9,10 +9,10 @@ export default defineConfig(({ mode }) => ({
    build: {
      rollupOptions: {
        input: {
-         main: 'index.html',
-       },
-     },
-   },
+         main: 'index.html'
+       }
+     }
+   }, 
    server: {
      host: "::",
      port: 8080, 
