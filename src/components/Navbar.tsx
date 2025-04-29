@@ -22,8 +22,8 @@ const Navbar = () => {
             />
             <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
           </div>
-          <div className="flex items-center">
-            <span className="text-gray-400">Consultoria e Tecnologia</span>
+          <div 
+            <span className="text-gray-600">Consultoria e Tecnologia</span>
           </div> 
           
           {/* Menu de navegação para desktop */}
