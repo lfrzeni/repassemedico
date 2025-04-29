@@ -37,7 +37,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center justify-center md:justify-start">
                 <CheckCircle2 className="text-[#1e6df6] mr-2" />
-                <span className="text-gray-700">Transparência para médicos e prestadores</span>
+                <span className="text-gray-700">Transparência para prestadores</span>
               </div>
             </div>
             <Button 
@@ -50,7 +50,8 @@ const Hero = () => {
           
           <div className="hidden md:block">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              <!-- src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" -->
+              src="https://www.istockphoto.com/br/foto/doutor-em-medicina-em-vestido-branco-trabalhando-com-tablet-digital-na-mesa-no-hospital-gm842689384-137590673"
               alt="Médico utilizando sistema MedBill"
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
