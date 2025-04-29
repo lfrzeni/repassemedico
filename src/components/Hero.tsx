@@ -50,7 +50,7 @@ const Hero = () => {
           
           <div className="hidden md:block">
             <img 
-              src="https://www.istockphoto.com/br/foto/doutor-em-medicina-em-vestido-branco-trabalhando-com-tablet-digital-na-mesa-no-hospital-gm842689384-137590673"
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
               alt="Médico utilizando sistema MedBill"
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
