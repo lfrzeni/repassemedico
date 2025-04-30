@@ -21,7 +21,7 @@ const Navbar = () => {
               className="mr-2 h-8 w-8 object-contain"
             />
             <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
-            <span className="ml-2 text-gray-500 font-normal" style={{ fontSize: "0.85rem" }}>Consultoria e Tecnologia</span>
+            <span className="ml-2 text-gray-500 font-normal" style={{ fontSize: "0.87rem" }}>Consultoria e Tecnologia</span>
           </div>
                    
           {/* Menu de navegação para desktop */}
