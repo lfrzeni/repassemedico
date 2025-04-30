@@ -22,7 +22,7 @@ const Navbar = () => {
             />
             <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
           </div>
-          <div 
+          <div> 
             <span className="text-gray-600">Consultoria e Tecnologia</span>
           </div> 
           
