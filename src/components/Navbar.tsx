@@ -21,11 +21,9 @@ const Navbar = () => {
               className="mr-2 h-8 w-8 object-contain"
             />
             <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">MedBill</span>
+            <span className="ml-2 text-gray-700">Consultoria e Tecnologia</span>
           </div>
-          <div> 
-            <span className="text-gray-600">Consultoria e Tecnologia</span>
-          </div> 
-          
+                   
           {/* Menu de navegação para desktop */}
           <div className="hidden md:flex space-x-8">
             <a href="#inicio" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Início</a>
