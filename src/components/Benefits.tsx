@@ -16,7 +16,7 @@ const Benefits = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative">
               <img 
-                src="public/lovable-uploads/11337a8a-2f37-4152-94cc-ebc67e0660a1.png?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                 alt="Dashboard do sistema MedBill" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
