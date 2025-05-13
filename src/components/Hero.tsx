@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import heroImage from './src/medico.jpeg';
+import heroImage from './medico.png';
 
 const Hero = () => {
   const scrollToContact = () => {
