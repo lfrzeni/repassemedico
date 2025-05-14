@@ -14,15 +14,26 @@ const Benefits = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-[#1e6df6] to-[#07f73f] mx-auto mb-12"></div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/ganhos.png"
-                alt="Dashboard do sistema MedBill" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#1e6df6]/20 to-[#07f73f]/20 rounded-lg"></div>
+          
             </div>
-            
+              <div className="flex flex-col gap-6">
+                {/* Primeira imagem com overlay */}
+                <div className="relative">
+                  <img 
+                    src="/lovable-uploads/gestores.png"
+                    alt="Gestores do sistema MedBill" 
+                    className="rounded-lg shadow-xl w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#1e6df6]/20 to-[#07f73f]/20 rounded-lg"></div>
+                </div>
+              
+                {/* Segunda imagem logo abaixo */}
+                <img 
+                  src="/lovable-uploads/potenciais.png"
+                  alt="Potenciais do sistema MedBill" 
+                  className="rounded-lg shadow-xl w-full h-auto object-cover"
+                 />
+              </div>
             <div className="space-y-8">
               <div className="flex items-start">
                 <div className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] p-2 rounded-lg mr-4 flex-shrink-0">
