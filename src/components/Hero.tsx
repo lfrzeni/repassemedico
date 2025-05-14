@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -52,8 +53,7 @@ const Hero = () => {
               alt="Médico utilizando o sistema MedBill"
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
-          </div>
-        </div>
+         </div>
       </div>
     </section>
   );
