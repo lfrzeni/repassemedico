@@ -32,8 +32,8 @@ const Footer = () => {
           <div className="flex space-x-8">
             <a href="#inicio" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Início</a>
             <a href="#sobre" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Sobre</a>
-            <a href="#servicos" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Serviços</a>
             <a href="#vantagens" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Vantagens</a>
+            <a href="#servicos" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Serviços</a>
             <a href="#depoimentos" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Depoimentos</a>
             <a href="#contato" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Contato</a>
           </div>
