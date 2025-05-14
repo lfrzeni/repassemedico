@@ -23,16 +23,14 @@ const Benefits = () => {
                     alt="Gestores do sistema MedBill" 
                     className="rounded-lg shadow-xl w-full h-auto object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#1e6df6]/20 to-[#07f73f]/20 rounded-lg"></div>
                 </div>
-              
                 {/* Segunda imagem logo abaixo */}
                 <div>
-                <img 
-                  src="/lovable-uploads/potenciais.png"
-                  alt="Potenciais do sistema MedBill" 
-                  className="rounded-lg shadow-xl w-full h-auto object-cover"
-                 />
+                  <img 
+                    src="/lovable-uploads/potenciais.png"
+                    alt="Potenciais do sistema MedBill" 
+                    className="rounded-lg shadow-xl w-full h-auto object-cover"
+                  /> 
               </div>
             </div>   
             <div className="space-y-8">
