@@ -5,6 +5,15 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      external: ['emailjs-com'],
+    },
+  },
+});
+
 export default defineConfig(({ mode }) => ({
    build: {
      rollupOptions: {
