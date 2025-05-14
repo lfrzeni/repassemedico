@@ -47,9 +47,7 @@ const Hero = () => {
               Solicitar Demonstração <ArrowRight size={18} />
             </Button>
           </div>
-          
-          <div className="hidden md:block">
-            <img 
+           <img 
               src="/lovable-uploads/medico_medbill.png"
               alt="Médico utilizando o sistema MedBill"
               className="rounded-lg shadow-xl w-full h-auto object-cover"
