@@ -29,7 +29,7 @@ const Footer = () => {
             <p className="text-gray-400 mt-2">Consultoria e Tecnologia em Saúde</p>
           </div>
           
-          <div className="flex space-x-8">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-center md:text-left">
             <a href="#inicio" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Início</a>
             <a href="#sobre" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Sobre</a>
             <a href="#vantagens" className="text-gray-400 hover:text-[#1e6df6] transition-colors">Vantagens</a>
