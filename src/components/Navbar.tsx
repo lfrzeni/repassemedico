@@ -28,8 +28,8 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8">
             <a href="#inicio" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Início</a>
             <a href="#sobre" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Sobre</a>
-            <a href="#servicos" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Serviços</a>
             <a href="#vantagens" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Vantagens</a>
+            <a href="#servicos" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Serviços</a>
             <a href="#depoimentos" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Depoimentos</a>
             <a href="#contato" className="text-gray-600 hover:text-[#1e6df6] transition-colors">Contato</a>
           </div>
@@ -50,8 +50,8 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4 py-4">
             <a href="#inicio" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Início</a>
             <a href="#sobre" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Sobre</a>
-            <a href="#servicos" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Serviços</a>
             <a href="#vantagens" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Vantagens</a>
+            <a href="#servicos" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Serviços</a>
             <a href="#depoimentos" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Depoimentos</a>
             <a href="#contato" className="text-gray-600 hover:text-[#1e6df6] transition-colors" onClick={toggleMenu}>Contato</a>
           </div>
