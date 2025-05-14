@@ -1,7 +1,5 @@
 
 import React from 'react';
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -18,47 +16,14 @@ import {
 const Contact = () => {
   const { toast } = useToast();
   
-  const [formData, setFormData] = useState({
-    nome: '',
-    email: '',
-    telefone: '',
-    empresa: '',
-    tipo: '',
-    mensagem: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSelectChange = (value) => {
-    setFormData({ ...formData, tipo: value });
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    try {
-      await emailjs.send(
-        'seu_service_id',
-        'seu_template_id',
-        formData,
-        'sua_user_id_publica'
-      );
-
-      toast({
-        title: "Solicitação enviada!",
-        description: "Entraremos em contato em breve para agendar sua demonstração.",
-      });
-    } catch (error) {
-      console.error(error);
-      toast({
-        title: "Erro ao enviar",
-        description: "Tente novamente mais tarde.",
-      });
-    }
+    
+    toast({
+      title: "Solicitação enviada!",
+      description: "Entraremos em contato em breve para agendar sua demonstração.",
+    });
   };
-
 
   return (
     <section id="contato" className="py-20 bg-gradient-to-r from-[#1e6df6]/10 to-[#07f73f]/10">
