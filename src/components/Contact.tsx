@@ -141,7 +141,7 @@ const Contact = () => {
                 <Button 
                   className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] hover:opacity-90 text-white px-6 py-3 rounded-full w-full flex items-center justify-center gap-2"
                   onClick={() => {
-                    window.location.href = "mailto:contato@medbill.com.br";
+                    window.location.href = "mailto:contato@medbill.com.br?subject=Orçamento&body=Informações do sistema Medbill";
                   }}
                 >
                   Entrar em contato <Send size={18} />
