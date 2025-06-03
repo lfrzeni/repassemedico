@@ -83,16 +83,16 @@ const Contact = () => {
                       </SelectContent>
                     </Select>
                   </div> 
-                  
-                 <div>
+                 </div> 
+               
+                <div>
                     <Input 
                       placeholder="Empresa/Clínica"
                       className="w-full border-gray-300"
                       required
                     />
                  </div>
-                     
-                           
+
                 <div>
                   <Textarea
                     placeholder="Conte-nos sobre suas necessidades específicas"
