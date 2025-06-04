@@ -44,134 +44,88 @@ const ContactForm = () => {
     
  
 
-  return (
-    <section id="contato" className="py-20 bg-gradient-to-r from-[#1e6df6]/10 to-[#07f73f]/10">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
-            Solicite uma <span className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] bg-clip-text text-transparent">Demonstração</span>
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#1e6df6] to-[#07f73f] mx-auto mb-12"></div>
-          
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-6 text-gray-800">
-                Veja o Medbill em ação
-              </h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Input 
-                      placeholder="Nome"
-                      className="w-full border-gray-300"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <Input 
-                      type="email"
-                      placeholder="Email"
-                      className="w-full border-gray-300"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Input 
-                      placeholder="Telefone"
-                      className="w-full border-gray-300"
-                      required
-                    />
-                  </div>
-                 
-                  <div>
-                    <Select>
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder="Tipo de instituição" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="hospital">Hospital</SelectItem>
-                        <SelectItem value="clinica">Clínica</SelectItem>
-                        <SelectItem value="consultorio">Consultório</SelectItem>
-                        <SelectItem value="laboratorio">Laboratório</SelectItem>
-                        <SelectItem value="outro">Outro</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div> 
-                 </div> 
-               
-                <div>
-                    <Input 
-                      placeholder="Empresa/Clínica"
-                      className="w-full border-gray-300"
-                      required
-                    />
-                 </div>
-
-                <div>
-                  <Textarea
-                    placeholder="Conte-nos sobre suas necessidades específicas"
-                    className="w-full border-gray-300 min-h-[100px]"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] hover:opacity-90 text-white px-6 py-3 rounded-full w-full flex items-center justify-center gap-2"
-                >
-                  Solicitar Demonstração <CalendarCheck size={18} />
-                </Button>
-              </form>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-6 text-gray-800">
-                Informações de Contato
-              </h3>
-              
-              <div className="space-y-6 mb-8">
-                <div className="flex items-start">
-                  <Mail className="text-[#1e6df6] mr-3 mt-1" />
-                  <div>
-                    <p className="font-medium text-gray-800">Email</p>
-                    <p className="text-gray-600">contato@medbill.com.br</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <Phone className="text-[#1e6df6] mr-3 mt-1" />
-                  <div>
-                    <p className="font-medium text-gray-800">Tel/Whats</p>
-                    <p className="text-gray-600">(18) 99722-5898</p>
-                  </div>
-                </div>
-                                
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h4 className="font-semibold text-gray-800 mb-4">Agende uma conversa</h4>
-                <p className="text-gray-600 mb-6">
-                  Nossa equipe está pronta para entender suas necessidades e mostrar como o MedBill pode transformar a gestão financeira da sua instituição.
-                </p>
-                <Button 
-                  className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] hover:opacity-90 text-white px-6 py-3 rounded-full w-full flex items-center justify-center gap-2"
-                  onClick={() => {
-                    window.location.href = "mailto:contato@medbill.com.br?subject=Sistema Medbill&body=Olá, gostaria de ter mais informações do Sistema Integrado de Repasse Medico Medbill.";
-                  }}
-                >
-                  Entrar em contato <Send size={18} />
-                </Button>
-              </div>
-            </div>
+ return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-green-100 p-4">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+        <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+          Solicite uma Demonstração
+        </h2>
+        <form ref={form} onSubmit={sendEmail} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Nome</label>
+            <input 
+              type="text"
+              name="nome"
+              required
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
           </div>
-        </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <input 
+              type="email"
+              name="email"
+              required
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Telefone</label>
+            <input 
+              type="text"
+              name="telefone"
+              required
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Empresa/Clínica</label>
+            <input 
+              type="text"
+              name="empresa"
+              required
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Tipo de Instituição</label>
+            <select 
+              name="instituicao" 
+              required 
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            >
+              <option value="">Selecione</option>
+              <option value="Hospital">Hospital</option>
+              <option value="Clínica">Clínica</option>
+              <option value="Consultório">Consultório</option>
+              <option value="Laboratório">Laboratório</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Mensagem</label>
+            <textarea 
+              name="mensagem"
+              rows={4}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            ></textarea>
+          </div>
+
+          <button 
+            type="submit" 
+            className="w-full bg-gradient-to-r from-blue-600 to-green-500 text-white py-2 px-4 rounded-md hover:opacity-90"
+          >
+            Enviar Solicitação
+          </button>
+        </form>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Contact;
+export default ContactForm;
