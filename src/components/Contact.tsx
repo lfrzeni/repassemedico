@@ -21,14 +21,15 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!form.current) return;
-      
+    
        emailjs.sendForm(
       'service_nvd405v',      // Seu Service ID
       'template_gd1fiqo',     // Seu Template ID
       form.current,
       'L4kr7mv_UkVm4qx-b'          // Sua Public Key
-    ).then(() => {
+    )
+    if (!form.current) return;
+    .then(() => {
       toast({
         title: "Solicitação enviada com sucesso!",
         description: "Nossa equipe entrará em contato em breve.",
