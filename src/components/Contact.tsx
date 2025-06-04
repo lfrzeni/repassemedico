@@ -14,16 +14,35 @@ import {
 } from "@/components/ui/select";
 
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    toast({
-      title: "Solicitação enviada!",
-      description: "Entraremos em contato em breve para agendar sua demonstração.",
+
+    if (!form.current) return;
+      
+       emailjs.sendForm(
+      'service_nvd405v',      // Seu Service ID
+      'template_gd1fiqo',     // Seu Template ID
+      form.current,
+      'L4kr7mv_UkVm4qx-b'          // Sua Public Key
+    ).then(() => {
+      toast({
+        title: "Solicitação enviada com sucesso!",
+        description: "Nossa equipe entrará em contato em breve.",
+      });
+      form.current?.reset();
+    }).catch(() => {
+      toast({
+        title: "Erro ao enviar",
+        description: "Tente novamente mais tarde.",
+        variant: "destructive",
+      });
     });
-  };
+  }; 
+    
+ 
 
   return (
     <section id="contato" className="py-20 bg-gradient-to-r from-[#1e6df6]/10 to-[#07f73f]/10">
