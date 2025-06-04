@@ -29,7 +29,7 @@ const Contact = () => {
       'L4kr7mv_UkVm4qx-b'          // Sua Public Key
     )
     if (!form.current) return;
-    .then(() => {
+    then(() => {
       toast({
         title: "Solicitação enviada com sucesso!",
         description: "Nossa equipe entrará em contato em breve.",
