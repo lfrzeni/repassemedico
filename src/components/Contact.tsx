@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 
 import emailjs from 'emailjs-com';
+
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -14,35 +15,32 @@ import {
   SelectValue 
 } from "@/components/ui/select";
 
-const Contact = () => {
+const SERVICE_ID = 'service_nvd405v';
+const TEMPLATE_ID = 'template_gd1fiqo';
+const PUBLIC_KEY = 'public_L4kr7mv_UkVm4qx-b';
+
+const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
-  const { toast } = useToast();
-  
+   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    
-       emailjs.sendForm(
-      'service_nvd405v',      // Seu Service ID
-      'template_gd1fiqo',     // Seu Template ID
-      form.current,
-      'L4kr7mv_UkVm4qx-b'          // Sua Public Key
-    )
     if (!form.current) return;
-    then(() => {
+       emailjs.sendForm(
+          SERVICE_ID,
+          TEMPLATE_ID,
+          form.current,
+          PUBLIC_KEY
+     ).then(() => {
       toast({
         title: "Solicitação enviada com sucesso!",
         description: "Nossa equipe entrará em contato em breve.",
       });
       form.current?.reset();
-    }).catch(() => {
-      toast({
-        title: "Erro ao enviar",
-        description: "Tente novamente mais tarde.",
-        variant: "destructive",
-      });
-    });
-  }; 
+    }).catch((error) => {
+      alert('❌ Erro ao enviar. Tente novamente.\n' + error.text);
+     });
+}; 
     
  
 
