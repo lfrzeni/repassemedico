@@ -171,6 +171,7 @@ export default function ContactForm() {
               </div>
             </div>
          </div>
+       </div>
     </section>
   );
 };
