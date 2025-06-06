@@ -1,4 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
+const SERVICE_ID = 'service_pdfty9c';
+const TEMPLATE_ID = 'template_gd1fiqo';
+const PUBLIC_KEY = 'L4kr7mv_UkVm4qx-b';
+
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -12,17 +18,25 @@ import {
   SelectValue 
 } from "@/components/ui/select";
 
-const Contact = () => {
-  const { toast } = useToast();
-  
-  const handleSubmit = (e: React.FormEvent) => {
+export default function ContactForm() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    toast({
-      title: "Solicitação enviada!",
-      description: "Entraremos em contato em breve para agendar sua demonstração.",
-    });
+
+    if (!form.current) return;
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then(() => {
+        alert('✅ Mensagem enviada com sucesso!');
+        form.current?.reset();
+      })
+      .catch((error) => {
+        console.error('❌ Erro ao enviar:', error);
+        alert('Erro ao enviar a mensagem. Verifique os dados e tente novamente.');
+      });
   };
+
 
   return (
     <section id="contato" className="py-20 bg-gradient-to-r from-[#1e6df6]/10 to-[#07f73f]/10">
@@ -39,10 +53,11 @@ const Contact = () => {
                 Veja o Medbill em ação
               </h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={form} onSubmit={sendEmail} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Input 
+                   <Input
+                      type="text"
+                      name="nome"
                       placeholder="Nome"
                       className="w-full border-gray-300"
                       required
@@ -52,6 +67,7 @@ const Contact = () => {
                   <div>
                     <Input 
                       type="email"
+                      name="emailde"
                       placeholder="Email"
                       className="w-full border-gray-300"
                       required
@@ -62,6 +78,8 @@ const Contact = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <Input 
+                      type="text"
+                      name="telefone"
                       placeholder="Telefone"
                       className="w-full border-gray-300"
                       required
@@ -69,7 +87,9 @@ const Contact = () => {
                   </div>
                  
                   <div>
-                    <Select>
+                    <Select
+                      name="instituicao"
+                      >
                       <SelectTrigger className="w-full">
                         <SelectValue placeholder="Tipo de instituição" />
                       </SelectTrigger>
@@ -85,15 +105,18 @@ const Contact = () => {
                  </div> 
                
                 <div>
-                    <Input 
-                      placeholder="Empresa/Clínica"
+                    <Input
+                      type="text"
+                      name="empresa"
+                      placeholder="Instituição/Empresa"
                       className="w-full border-gray-300"
                       required
                     />
                  </div>
 
                 <div>
-                  <Textarea
+                  <Textarea          
+                    name="mensagem"
                     placeholder="Conte-nos sobre suas necessidades específicas"
                     className="w-full border-gray-300 min-h-[100px]"
                   />
