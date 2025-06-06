@@ -73,10 +73,8 @@ export default function ContactForm() {
                       required
                     />
                   </div>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
+                              
+                  <div className="grid md:grid-cols-2 gap-4">           
                     <Input 
                       type="text"
                       name="telefone"
@@ -101,10 +99,9 @@ export default function ContactForm() {
                         <SelectItem value="outro">Outro</SelectItem>
                       </SelectContent>
                     </Select>
-                  </div> 
-                 </div> 
+                  </div>            
                
-                <div>
+                  <div>
                     <Input
                       type="text"
                       name="empresa"
@@ -112,21 +109,20 @@ export default function ContactForm() {
                       className="w-full border-gray-300"
                       required
                     />
-                 </div>
+                  </div>
 
-                <div>
-                  <Textarea          
-                    name="mensagem"
-                    placeholder="Conte-nos sobre suas necessidades específicas"
-                    className="w-full border-gray-300 min-h-[100px]"
-                  />
-                </div>
+                  <div>
+                    <Textarea          
+                      name="mensagem"
+                      placeholder="Conte-nos sobre suas necessidades específicas"
+                      className="w-full border-gray-300 min-h-[100px]"
+                    />
+                  </div>
                 
                 <Button 
                   type="submit" 
                   className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] hover:opacity-90 text-white px-6 py-3 rounded-full w-full flex items-center justify-center gap-2"
-                >
-                  Solicitar Demonstração <CalendarCheck size={18} />
+                  <Solicitar Demonstração <CalendarCheck size={18} />
                 </Button>
               </form>
             </div>
@@ -176,4 +172,3 @@ export default function ContactForm() {
   );
 };
 
-export default Contact;
