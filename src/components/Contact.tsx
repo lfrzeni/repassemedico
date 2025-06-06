@@ -122,7 +122,7 @@ export default function ContactForm() {
                 <Button 
                   type="submit" 
                   className="bg-gradient-to-r from-[#1e6df6] to-[#07f73f] hover:opacity-90 text-white px-6 py-3 rounded-full w-full flex items-center justify-center gap-2"
-                  <Solicitar Demonstração <CalendarCheck size={18} />
+                  Solicitar Demonstração <CalendarCheck size={18} />
                 </Button>
               </form>
             </div>
