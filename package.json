@@ -1,6 +1,8 @@
+
 {
   "name": "emailjs-form",
   "version": "1.0.0",
+  
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
@@ -14,6 +16,7 @@
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
+    
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.1",
