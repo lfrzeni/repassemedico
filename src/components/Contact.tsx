@@ -1,6 +1,6 @@
                 
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '/emailjs-com';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
