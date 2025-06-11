@@ -80,9 +80,8 @@ export default function ContactForm() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="hospital">Hospital</SelectItem>
-                      <SelectItem value="clinica">Clínica</SelectItem>
-                      <SelectItem value="consultorio">Consultório</SelectItem>
-                      <SelectItem value="laboratorio">Laboratório</SelectItem>
+                      <SelectItem value="clinica">Clínicas</SelectItem>
+                      <SelectItem value="consultorio">Operadora Plano</SelectItem>
                       <SelectItem value="outro">Outro</SelectItem>
                     </SelectContent>
                   </Select>
@@ -130,7 +129,7 @@ export default function ContactForm() {
                   <Phone className="text-[#1e6df6] mr-3 mt-1" />
                   <div>
                     <p className="font-medium text-gray-800">Tel/Whats</p>
-                    <p className="text-gray-600">(18) 99722-5898</p>
+                    <p className="text-gray-600">(43) 99103-5777</p>
                   </div>
                 </div>
               </div>
