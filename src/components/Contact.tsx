@@ -80,8 +80,8 @@ export default function ContactForm() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="hospital">Hospital</SelectItem>
-                      <SelectItem value="clinica">Clínicas</SelectItem>
-                      <SelectItem value="consultorio">Operadora Plano</SelectItem>
+                       <SelectItem value="operadora">Operadora Plano</SelectItem>
+                      <SelectItem value="clinica">Clínicas</SelectItem>                     
                       <SelectItem value="outro">Outro</SelectItem>
                     </SelectContent>
                   </Select>
